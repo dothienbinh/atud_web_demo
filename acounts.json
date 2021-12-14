@@ -1,0 +1,29 @@
+[{
+  "_id": {
+    "$oid": "61588f2f8a76014c60f17145"
+  },
+  "username": "binh",
+  "password": "1",
+  "role": "1"
+},{
+  "_id": {
+    "$oid": "61588f8e8a76014c60f1714b"
+  },
+  "username": "binh2",
+  "password": "1",
+  "role": "1"
+},{
+  "_id": {
+    "$oid": "61b77634ed17fcf586c1b503"
+  },
+  "username": "binh3",
+  "password": "1",
+  "role": "2"
+},{
+  "_id": {
+    "$oid": "61b77645ed17fcf586c1b504"
+  },
+  "username": "binh4",
+  "password": "1",
+  "role": "2"
+}]

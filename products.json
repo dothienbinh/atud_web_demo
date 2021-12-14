@@ -1,0 +1,156 @@
+[{
+  "_id": {
+    "$oid": "6160807ab84428ce9cfd6b82"
+  },
+  "name": "lập trình android 1234",
+  "description": "sử dụng java và vô vàn thứ gì đó",
+  "image": "https://img.youtube.com/vi/-Lms46EVhnU/sddefault.jpg",
+  "slug": "lap-trinh-android",
+  "level": "khá",
+  "VideoId": "-Lms46EVhnU",
+  "deleted": true,
+  "deletedAt": {
+    "$date": "2021-12-13T16:55:28.753Z"
+  },
+  "author": "binh"
+},{
+  "_id": {
+    "$oid": "616082e3b84428ce9cfd6b87"
+  },
+  "name": "lập tình python",
+  "description": "code thuật toán và rất nhiều thứ kinh khủng khác đều có thư viện hỗ trợ",
+  "image": "https://img.youtube.com/vi/o9lzrqkvCwI/sddefault.jpg",
+  "slug": "lap-tinh-python",
+  "level": "cơ bản",
+  "VideoId": "o9lzrqkvCwI",
+  "deleted": true,
+  "deletedAt": {
+    "$date": "2021-12-13T16:55:31.058Z"
+  },
+  "author": "binh"
+},{
+  "_id": {
+    "$oid": "616083d5b84428ce9cfd6b8c"
+  },
+  "name": "lập tình html css",
+  "description": "các thẻ cơ bản tạo nên bộ khung của trang web",
+  "image": "https://img.youtube.com/vi/7mnl-deo48c/sddefault.jpg",
+  "slug": "lap-tinh-html-css",
+  "level": "cơ bản",
+  "VideId": "cMrT_wutyP0",
+  "deleted": false,
+  "VideoId": "7mnl-deo48c",
+  "author": "binh"
+},{
+  "_id": {
+    "$oid": "6161563ece8653ed8d72f28a"
+  },
+  "name": "lập tình Ruby",
+  "description": "ngôn ngữ lập trình có rất lâu rồi nên có một cộng đồng cự lớn",
+  "image": "https://img.youtube.com/vi/bJsaR9-h26Y/sddefault.jpg",
+  "slug": "lap-tinh-ruby",
+  "level": "khó",
+  "VideoId": "bJsaR9-h26Y",
+  "deleted": false,
+  "author": "binh"
+},{
+  "_id": {
+    "$oid": "6161d30a703e14fbd2d459e2"
+  },
+  "name": "lập tình fullstack",
+  "description": "fullstack với docker và rất nhiều thứ hay ho",
+  "image": "https://img.youtube.com/vi/hlWiI4xVXKY/sddefault.jpg",
+  "slug": "lap-tinh-fullstack",
+  "__v": 0,
+  "VideoId": "hlWiI4xVXKY",
+  "level": "khó",
+  "deleted": false,
+  "author": "binh2"
+},{
+  "_id": {
+    "$oid": "6162595e13520de664a5a27c"
+  },
+  "name": "lập tình php",
+  "description": "ưu thế nhanh linh động",
+  "image": "https://img.youtube.com/vi/lCOF9LN_Zxs/sddefault.jpg",
+  "slug": "lap-tinh-php",
+  "__v": 0,
+  "VideoId": "lCOF9LN_Zxs",
+  "level": "khó",
+  "deleted": true,
+  "author": "binh2",
+  "deletedAt": {
+    "$date": "2021-12-13T16:43:34.639Z"
+  }
+},{
+  "_id": {
+    "$oid": "616259cf13520de664a5a280"
+  },
+  "name": "lập tình responsive",
+  "description": "tạo ra giao diện phù hợp dễ nhìn trên mọi thiết bị",
+  "image": "https://img.youtube.com/vi/zoK1swTBKXc/sddefault.jpg",
+  "slug": "lap-tinh-responsive",
+  "__v": 0,
+  "VideoId": "zoK1swTBKXc",
+  "level": "trung bình",
+  "deleted": false,
+  "deletedAt": {
+    "$date": "2021-10-10T09:34:53.088Z"
+  }
+},{
+  "_id": {
+    "$oid": "6162b622e4435c250e2318dd"
+  },
+  "name": "test1",
+  "description": "test1",
+  "image": "https://img.youtube.com/vi/FjHGZj2IjBk/sddefault.jpg",
+  "level": "khó",
+  "deleted": false,
+  "slug": "test1",
+  "__v": 0,
+  "VideoId": "FjHGZj2IjBk",
+  "deletedAt": {
+    "$date": "2021-12-02T04:10:29.596Z"
+  }
+},{
+  "_id": {
+    "$oid": "6162b683e4435c250e2318e6"
+  },
+  "name": "test2",
+  "description": "test1",
+  "image": "https://img.youtube.com/vi/XM-mfe0t-u8/sddefault.jpg",
+  "level": "khó",
+  "deleted": false,
+  "slug": "test2",
+  "__v": 0,
+  "deletedAt": {
+    "$date": "2021-10-10T09:48:19.564Z"
+  },
+  "VideoId": "XM-mfe0t-u8"
+},{
+  "_id": {
+    "$oid": "6162b6dbce28103e948f5110"
+  },
+  "name": "test1",
+  "description": "fullstack với docker và rất nhiều thứ hay ho",
+  "image": "https://img.youtube.com/vi/Qip9Lp5zALA/sddefault.jpg",
+  "level": "khó",
+  "deleted": false,
+  "slug": "test1--BamYjXgF",
+  "__v": 0,
+  "deletedAt": {
+    "$date": "2021-10-10T09:48:14.941Z"
+  },
+  "VideoId": "Qip9Lp5zALA"
+},{
+  "_id": {
+    "$oid": "61a8454046cc33bb3aa265a1"
+  },
+  "name": "binh",
+  "description": "test1",
+  "image": "https://img.youtube.com/vi/0pyNQdS1H1U/sddefault.jpg",
+  "level": "trung bình",
+  "deleted": false,
+  "slug": "binh",
+  "__v": 0
+}]
