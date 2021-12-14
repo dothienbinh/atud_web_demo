@@ -1,0 +1,16 @@
+body {
+  color: red;
+  padding: auto; }
+
+.item-product, .product, .top {
+  margin-top: 20px; }
+
+.form-create {
+  width: 100%; }
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .card-body .btn-add_home {
+    width: 70%; }

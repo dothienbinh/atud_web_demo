@@ -1,0 +1,21 @@
+<div class="home">
+    <div class="row">
+
+        {{#each products}}
+        <div class="col-md-4 item-product" style="min-height: 466px;">
+            <div class="card" style="width: 18rem; height: 100%;">
+                <a href="/products/{{this.slug}}">
+                    <img class="card-img-top" src="{{this.image}}" alt="Card image cap">
+                </a>
+                <div class="card-body">
+                    <a href="/products/{{this.slug}}">
+                        <h5 class="card-title">{{this.name}}</h5>
+                    </a>
+                    <p class="card-text">{{this.description}}</p>
+                    <a href="#" class="btn btn-primary btn-add_home" style="bottom: 0;">Them vao gio hang</a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
