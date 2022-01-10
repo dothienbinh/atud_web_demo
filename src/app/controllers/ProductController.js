@@ -47,18 +47,21 @@ class ProductController {
     //[PUT] /products/:id
     update(req, res, next) {
         var formData = {...req.body};
+        // console.log(formData);
         formData["image"] = `https://img.youtube.com/vi/${req.body.VideoId}/sddefault.jpg`;
+        formData["slug"] = formData.name;
         // res.json(formData);
+        var a = '/';
         Product.updateOne({_id: req.params.id}, formData)
-            .then(() => res.redirect('/me/stored/products'))
+            .then(() => res.redirect(a))
             .catch(next);
     }
 
     //[DELETE] /products/:id
     delete(req, res, next) {
         Product.delete({_id: req.params.id})
-            .then(() => res.redirect('back'))
-            .catch(next);
+            .then(() => res.json('success!'))
+            .catch(error => res.json(error.message));
     }
 
     //[DELETE] /products/:id/force
@@ -75,16 +78,7 @@ class ProductController {
             .catch(next);
     }
 
-    //POST del_cookie
-    delCookie(req, res, next) {
-        var id = req.cookies.id;
-        if(!req.cookies.id){
-            res.json('chua dang nhap');
-        } else {
-            res.clearCookie("id");
-            res.json('ok')
-        };
-    }
+
 
 }
 

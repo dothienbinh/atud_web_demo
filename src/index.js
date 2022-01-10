@@ -2,9 +2,13 @@ const express = require('express');
 const morgan = require('morgan');
 const handlebars = require('express-handlebars');
 const app = express();
+const dotenv = require('dotenv').config();
 const port = 3000;
 const path = require('path');
 const methodOverride = require('method-override');
+const jwt = require('jsonwebtoken');
+const cors = require('cors');
+
 
 // cookie parser
 const cookieParser = require('cookie-parser');
@@ -13,6 +17,7 @@ const route = require('./routes');
 const db = require('./config/db');
 
 db.connect();
+
 
 app.use(cookieParser());
 
@@ -23,6 +28,24 @@ app.use(express.urlencoded({
 
 app.use(methodOverride('_method'));
 
+//
+var corsOptions = {
+    origin: '*',
+    method: ['GET','POST','DELETE','UPDATE','PUT','PATCH'],
+}
+
+// const whitelist = ['http://localhost:3000', 'http://developer2.com']
+// const corsOptions1 = {
+//   origin: (origin, callback) => {
+//     if (whitelist.indexOf(origin) !== -1) {
+//       callback(null, true)
+//     } else {
+//     //   console.log(error);
+//     }
+//   }
+// }
+
+app.use(cors(corsOptions));
 
 // app.
 

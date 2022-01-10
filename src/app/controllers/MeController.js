@@ -4,12 +4,15 @@ const { mutipleMongooseToObject} = require('../../util/mongoose');
 class MeController {
 
 
+    
 
     storedProducts (req, res, next) {
         var author = req.cookies.id;
+        var user = 'me';
         Promise.all([Product.find({author: author}), Product.countDocumentsDeleted({author: author})])
             .then(([products, deletedCount]) => {
-                res.render('me/stored-products', { 
+                res.render('me/stored-products', {
+                    user,
                     deletedCount,
                     products: mutipleMongooseToObject(products)
                 });            
@@ -30,6 +33,10 @@ class MeController {
                 })
             })
             .catch(next)
+    }
+
+    create (req, res) {
+        res.render('products/create');
     }
 
 }

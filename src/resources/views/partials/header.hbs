@@ -10,22 +10,35 @@
                 <a class="nav-link" href="/login">Login <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/products/create">create</a>
+                <a class="nav-link" href="/me/create">create</a>
+            </li>
+            <li>
+                <a class="nav-link btn" id="logout">logout</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                 <div class="dropdown-menu" aria-labelledby="dropdownId">
                     <a class="dropdown-item" href="/me/stored/products">Khóa học của tôi</a>
                     <div class="dropdown-drivider"></div>
-                    <a class="dropdown-item" href="/products/create">Đăng khóa học</a>
                     <a class="dropdown-item" href="/admin">admin</a>
-                    <a class="dropdown-item" href="/news">logout</a>
                 </div>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <button class="btn btn-outline-success my-2 my-sm-0" id="search" type="submit">Search</button>
         </form>
     </div>
 </nav>
+<form name="logout_form" method="POST" action="/login/logout"></form>
+
+<script>
+    var logout = document.getElementById("logout");
+    var logout_from = document.forms['logout_form'];
+    logout.onclick = function() {
+        logout_form.submit();
+    }
+    
+</script>
+
+{{!-- href="/news" --}}
