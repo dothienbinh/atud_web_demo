@@ -31,13 +31,14 @@ class loginController {
                 
                 
                 console.log(token);
+                console.log(data);
 
                 
                 var a = '/';
                 // res.json(data);
                 res.cookie("ACCESS_TOKEN", token);
                 res.cookie("id", data.username);
-                return res.redirect('back');
+                return res.redirect(a);
             }
             else return res.status(500).json('that bai');
         })

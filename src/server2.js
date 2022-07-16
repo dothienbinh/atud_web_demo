@@ -16,5 +16,5 @@ console.log('2');
 fetch("http://localhost:3000/cors").then(req => req.text()).then(console.log)
 
 
-console.log(data);
+// console.log(data);
 app.listen(port, () => console.log(`App listening at port:${port}`));

@@ -56,7 +56,7 @@ class Auth {
             } catch (error) {
                 res.clearCookie("ACCESS_TOKEN");
                 res.clearCookie("id");
-                res.status(500).render('login/login' , {title: 'token khong hop le'});
+                res.render('login/login' , {title: 'token khong hop le'});
             }
         }
 

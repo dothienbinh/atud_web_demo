@@ -3,7 +3,7 @@ const morgan = require('morgan');
 const handlebars = require('express-handlebars');
 const app = express();
 const dotenv = require('dotenv').config();
-const port = 3000;
+const port = 8080;
 const path = require('path');
 const methodOverride = require('method-override');
 const jwt = require('jsonwebtoken');
@@ -30,8 +30,8 @@ app.use(methodOverride('_method'));
 
 //
 var corsOptions = {
-    origin: '*',
-    method: ['GET','POST','DELETE','UPDATE','PUT','PATCH'],
+    origin: '',
+    method: ['GET', 'POST', 'DELETE', 'UPDATE', 'PUT', 'PATCH'],
 }
 
 // const whitelist = ['http://localhost:3000', 'http://developer2.com']
@@ -56,7 +56,7 @@ app.use(cors(corsOptions));
 app.engine('hbs', handlebars({
     extname: '.hbs',
     helpers: {
-        sum: (a, b) => a+b,
+        sum: (a, b) => a + b,
     }
 }));
 app.set('view engine', 'hbs');
