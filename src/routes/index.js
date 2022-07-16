@@ -1,11 +1,8 @@
-const newsRouter = require('./news');
-const sitesRouter = require('./sites');
+
 const productsRouter = require('./products');
-const meRouter = require('./me');
 const loginRouter = require('./login');
 const requireAuth  = require('../util/Auth');
-const adminRouter = require('./admin');
-const corsRouter = require('./cors');
+
 
 function route(app) {
 

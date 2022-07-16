@@ -5,34 +5,34 @@ const app = express();
 const dotenv = require('dotenv').config();
 const port = 8080;
 const path = require('path');
-const methodOverride = require('method-override');
 const jwt = require('jsonwebtoken');
 const cors = require('cors');
 
 
 // cookie parser
 const cookieParser = require('cookie-parser');
+app.use(cookieParser());
 
+// router
 const route = require('./routes');
-const db = require('./config/db');
 
+// db connect
+const db = require('./config/db');
 db.connect();
 
 
-app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({
     extended: true
 }));
 
-app.use(methodOverride('_method'));
 
-//
-var corsOptions = {
-    origin: '',
-    method: ['GET', 'POST', 'DELETE', 'UPDATE', 'PUT', 'PATCH'],
-}
+// cors
+// var corsOptions = {
+//     origin: '',
+//     method: ['GET', 'POST', 'DELETE', 'UPDATE', 'PUT', 'PATCH'],
+// }
 
 // const whitelist = ['http://localhost:3000', 'http://developer2.com']
 // const corsOptions1 = {
@@ -44,23 +44,8 @@ var corsOptions = {
 //     }
 //   }
 // }
+// app.use(cors(corsOptions));
 
-app.use(cors(corsOptions));
-
-// app.
-
-//http logs
-// app.use(morgan('combined'));
-
-// // tmplate engine
-app.engine('hbs', handlebars({
-    extname: '.hbs',
-    helpers: {
-        sum: (a, b) => a + b,
-    }
-}));
-app.set('view engine', 'hbs');
-app.set('views', path.join(__dirname, 'resources', 'views'));
 
 
 route(app);
